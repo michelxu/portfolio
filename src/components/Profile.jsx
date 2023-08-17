@@ -1,11 +1,10 @@
 import {BsGithub, BsFillSendFill} from 'react-icons/bs'
-import {HiOutlineLocationMarker} from 'react-icons/hi'
 import pp from '../assets/profile_pic.jpg'
 
 const Profile = () => {
   return (
     <>
-    <div className='flex flex-col items-center py-8 mb-8 bg-gray-200 rounded'>
+    <div className='flex flex-col items-center py-8 mb-8 px-2 border border-gray-300 rounded'>
       <img src={pp} className='h-32 w-32 rounded-full border-2 border-gray-500'/>
       <h2 className='font-montse font-semibold text-2xl'>
         Jean Bustamante
@@ -21,13 +20,13 @@ const Profile = () => {
         que permitan impulsar mi crecimiento personal y profesional.
       </p>
       <div className='flex flex-row gap-2'>
-        <a href='https://github.com/michelxu' className='flex flex-row items-center gap-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md'>
+        <a href='https://github.com/michelxu' target='_blank' className='flex flex-row items-center gap-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md'>
+          <span className='font-montse'>Github</span>
           <BsGithub className='text-xl'/>
-          <p>Github</p>
         </a>
-        <a href='mailto:jeanm.bustamantes@gmail.com' className='flex flex-row items-center gap-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md'>
+        <a href='mailto:jeanm.bustamantes@gmail.com' target='_blank' className='flex flex-row items-center gap-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md'>
+          <span className='font-montse'>Email</span>
           <BsFillSendFill className='text-md'/>
-          <p>Email</p>
         </a>
       </div>
     </div>

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,7 +8,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'MyFont': ['"My Font"', 'serif'], // Ensure fonts with spaces have " " surrounding it.
         'montse': ['Montserrat', 'sans-serif'] // Ensure fonts with spaces have " " surrounding it.
       },
     },

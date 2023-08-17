@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-    <footer className='h-12 mx-auto text-center py-2 bg-black'>
-      <p className='font-montse font-medium text-zinc-100'>Jean Bustamante.</p>
+    <footer className='mx-auto text-center py-4 bg-gray-100'>
+      <p className='font-montse font-medium text-zinc-400'>Jean Bustamante.</p>
     </footer>
     </>
   )
