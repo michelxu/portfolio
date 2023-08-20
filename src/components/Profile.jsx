@@ -1,13 +1,18 @@
 import {BsGithub, BsFillSendFill} from 'react-icons/bs'
-import profile_pic from '../assets/profile_pic.jpg'
 import profile_avatar from '../assets/profile_avatar.png'
 
 const Profile = () => {
 
   return (
     <>
-    <div className='flex flex-col items-center py-8 mb-8 px-2 border border-gray-300 rounded dark:bg-gunmetal dark:border-midnight-300'>
-      <img src={profile_avatar} className='h-48 w-48 bg-gray-100 rounded-full border-2 border-gray-500 dark:border-midnight-300'/>
+    <div className='flex flex-col items-center py-8 mb-8 px-2 bg-gray-200 border border-gray-300 rounded dark:bg-gunmetal dark:border-midnight-300'>
+      {/* ***** Profile Pic ***** */}
+      <div className='flex relative overflow-hidden h-40 w-40 sm:h-48 sm:w-48 mb-2 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 rounded-full border-4 border-gray-50 dark:border-midnight-300'>
+        <img src={profile_avatar}
+        className='h-48 sm:h-56 mt-2 -ms-0.5 object-cover absolute'
+        />
+      </div>
+      {/* ***** Title and subtitles ***** */}
       <h2 className='font-montse font-semibold text-2xl dark:text-gray-100'>
         Jean Bustamante
       </h2>
